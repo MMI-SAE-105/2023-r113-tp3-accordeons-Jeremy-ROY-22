@@ -12,7 +12,7 @@
     <div class="accordeon" x-data = "{estOuvert : 1}">
       <section>
         <button @click="isOpen = 1">bouton 1</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, perferendis. Porro, sint. Quasi qui in architecto et error quod incidunt vitae officia? Asperiores perspiciatis voluptatem rerum veritatis sequi corporis voluptates.</p>
+        <p x-show="estOuvert === 1" x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, perferendis. Porro, sint. Quasi qui in architecto et error quod incidunt vitae officia? Asperiores perspiciatis voluptatem rerum veritatis sequi corporis voluptates.</p>
       </section>
       <section>
         <button @click="isOpen = 1">bouton 2</button>
