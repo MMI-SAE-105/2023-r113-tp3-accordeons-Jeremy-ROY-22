@@ -16,11 +16,11 @@
       </section>
       <section>
         <button @click="estOuvert = 2">bouton 2</button>
-        <p>Et laborum maxime enim consequuntur blanditiis voluptate ex cupiditate labore voluptas eum nihil, perspiciatis minima ducimus voluptatum dicta quis nobis odio commodi sed aliquam. Qui provident esse enim minus eligendi.</p>
+        <p x-show="estOuvert === 2" x-transition.scale.origin.top>Et laborum maxime enim consequuntur blanditiis voluptate ex cupiditate labore voluptas eum nihil, perspiciatis minima ducimus voluptatum dicta quis nobis odio commodi sed aliquam. Qui provident esse enim minus eligendi.</p>
       </section>
       <section>
         <button @click="estOuvert = 3">bouton 3</button>
-        <p>Quos perferendis nemo architecto amet itaque soluta veritatis ex eaque est nam illum numquam voluptatem similique, obcaecati exercitationem saepe sit nesciunt fuga praesentium neque repudiandae non magni. Provident, doloribus exercitationem!</p>
+        <p x-show="estOuvert === 3" x-transition.scale.origin.top>Quos perferendis nemo architecto amet itaque soluta veritatis ex eaque est nam illum numquam voluptatem similique, obcaecati exercitationem saepe sit nesciunt fuga praesentium neque repudiandae non magni. Provident, doloribus exercitationem!</p>
       </section>
     </div>
   </body>
