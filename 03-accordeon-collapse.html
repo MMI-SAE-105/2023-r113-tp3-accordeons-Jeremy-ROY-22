@@ -12,37 +12,34 @@
     <h1>Accordéon avec le plugin x.collapse</h1>
     <div class="accordeon">
       <section x-data="{ expanded: false }">
-        <button></button>
-        <p></p>
+        <button @click="expanded = ! expanded">contenu n°1</button>
+        <p x-show="expanded" x-collapse>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores asperiores deleniti possimus quisquam! Numquam, iste! Quas cum accusantium vitae expedita quidem. Ab recusandae deleniti totam aspernatur eos ea fuga dolores.
+        </p>
       </section>
       <section x-data="{ expanded: false }">
-        <button></button>
-        <p></p>
+        <button @click="expanded = ! expanded">contenu n°2</button>
+        <p x-show="expanded" x-collapse>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores asperiores deleniti possimus quisquam! Numquam, iste! Quas cum accusantium vitae expedita quidem. Ab recusandae deleniti totam aspernatur eos ea fuga dolores.
+        </p>
       </section>
       <section x-data="{ expanded: false }">
-        <button></button>
-        <p></p>
+        <button @click="expanded = ! expanded">contenu n°3</button>
+        <p x-show="expanded" x-collapse>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores asperiores deleniti possimus quisquam! Numquam, iste! Quas cum accusantium vitae expedita quidem. Ab recusandae deleniti totam aspernatur eos ea fuga dolores.
+        </p>
       </section>
     </div>
 
 
     <div x-data="{ expanded: false }">
-      <button @click="expanded = ! expanded">contenu n°1</button>
-      <p x-show="expanded" x-collapse>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores asperiores deleniti possimus quisquam! Numquam, iste! Quas cum accusantium vitae expedita quidem. Ab recusandae deleniti totam aspernatur eos ea fuga dolores.
-      </p>
+      
     </div>
     <div x-data="{ expanded: false }">
-      <button @click="expanded = ! expanded">contenu n°2</button>
-      <p x-show="expanded" x-collapse>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores asperiores deleniti possimus quisquam! Numquam, iste! Quas cum accusantium vitae expedita quidem. Ab recusandae deleniti totam aspernatur eos ea fuga dolores.
-      </p>
+      
     </div>
     <div x-data="{ expanded: false }">
-      <button @click="expanded = ! expanded">contenu n°3</button>
-      <p x-show="expanded" x-collapse>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores asperiores deleniti possimus quisquam! Numquam, iste! Quas cum accusantium vitae expedita quidem. Ab recusandae deleniti totam aspernatur eos ea fuga dolores.
-      </p>
+      
     </div>
   </body>
 </html>
