@@ -1,3 +1,3 @@
 - nom : Roy
 - prénom : Jérémy
-- URL publique du site :
+- URL publique du site : https://test-menu-accordeons.netlify.app/
