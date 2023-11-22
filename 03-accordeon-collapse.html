@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon plugin collapse</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon avec le plugin x.collapse</h1>
@@ -23,6 +24,8 @@
         <p></p>
       </sct>
     </div>
+
+
     <div x-data="{ expanded: false }">
       <button @click="expanded = ! expanded">contenu n°1</button>
       <p x-show="expanded" x-collapse>
