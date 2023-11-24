@@ -38,6 +38,8 @@
     display: flex;
     /* largeur de l'élément intrérieur de 317px (= déplié) */
     width: 317px;
+    /* pour que toutes les images aient la meme taille */
+    height: 100%;
 }
 
 #accordeon li figure figcaption {
