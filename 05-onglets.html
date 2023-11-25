@@ -30,13 +30,13 @@
 
     <div id="onglets" x-data="{isOpen : 1}">
       <ul role="tablist">
-        <li @click :class="{tabOpen:isOpen === 1}" role="tab">
+        <li @click="isOpen = 1" :class="{tabOpen:isOpen === 1}" role="tab">
           Onglet 1
         </li>
-        <li @click :class="{tabOpen:isOpen === 2}" role="tab">
+        <li @click="isOpen = 2" :class="{tabOpen:isOpen === 2}" role="tab">
           Onglet 2
         </li>
-        <li @click :class="{tabOpen:isOpen === 3}"role="tab">
+        <li @click="isOpen = 3" :class="{tabOpen:isOpen === 3}"role="tab">
           Onglet 3
         </li>
       </ul>
