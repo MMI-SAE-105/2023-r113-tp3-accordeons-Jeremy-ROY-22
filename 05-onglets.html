@@ -26,13 +26,13 @@
       }
     </style>
   </head>
-  <body>
+  <body x-data="{isOpen : 1}">
     <button>
       <a href="/index.html">retour à l'acceuil</a>
     </button>
     <h1>Onglets</h1>
 
-    <div id="onglets" x-data="{isOpen : 1}">
+    <div id="onglets" >
       <ul role="tablist">
         <li @click="isOpen = 1" :class="{tabOpen:isOpen === 1}" role="tab">
           Onglet 1
