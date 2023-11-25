@@ -14,9 +14,15 @@
 
     <div id="onglets" x-data="{ouvert : 1}">
       <ul role="tablist">
-        <li role="tab">Onglet 1</li>
-        <li role="tab">Onglet 2</li>
-        <li role="tab">Onglet 3</li>
+        <li :class="{tabOpen:ouvert === 1}" role="tab">
+          Onglet 1
+        </li>
+        <li :class="{tabOpen:ouvert === 2}" role="tab">
+          Onglet 2
+        </li>
+        <li :class="{tabOpen:ouvert === 3}"role="tab">
+          Onglet 3
+        </li>
       </ul>
       <div>
         <div role="tabpanel" x-show="ouvert === 1">
